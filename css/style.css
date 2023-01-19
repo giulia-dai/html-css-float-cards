@@ -33,7 +33,6 @@ span{
     width: 1300px;
     height: 700px;
     margin: 0 auto;
-    background-color: chartreuse;
 }
 
 .row {
@@ -51,5 +50,14 @@ span{
     height: 80px;
 }
 
+.clearfix{
+    content: '';
+    display: table;
+    clear: right;
+}
 
-
+span::after{
+    content: '';
+    display: table;
+    clear: both;
+}
